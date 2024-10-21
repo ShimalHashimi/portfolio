@@ -233,7 +233,7 @@
 }
 .cont-item{
     width: 80%;
-    margin: 50px auto;
+    margin: 10px auto;
     display: flex;
     align-items: center;
     gap: 100px;
@@ -497,6 +497,9 @@
     .contact-section h1{
         margin-bottom: -30px;
         font-size: 2.5rem;
+    }
+    .cont-item{
+        margin-top: 60px;
     }
 }
 @media screen and (max-width:580px){
