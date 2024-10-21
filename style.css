@@ -242,6 +242,8 @@
 .cont-item i{
     margin-right: 30px;
     margin-top: 30px;
+    text-decoration: none;
+    color: black;
 }
 .cont-item p{
     font-size: 1.4rem;
@@ -251,7 +253,6 @@
     align-items: center;
 }
 .cont-details i{
-    
     margin-top: 0px;
 }
 .form-section{
