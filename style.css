@@ -125,7 +125,7 @@ body{
 /********  About -section   *********/
 
 .about-section{
-    margin-top: 100px;
+    margin-top: 50px;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -597,6 +597,9 @@ body{
     .skills h1{
         font-size: 1.7rem;
     }
+    .work-section h1{
+        text-align: center;
+    }
 }
 @media screen and (max-width:767px) {
     #my-works{
@@ -617,7 +620,17 @@ body{
     .carousel-item i{
         font-size: 50px;
     }
+
     
+}
+@media screen and (max-width:690px) {
+    .contact-head{
+        width: 150%;
+        margin-bottom: -30px;
+    }
+    .contact-left p{
+        width: 150%;
+    }
 }
 
 @media screen and (max-width:600px) {
