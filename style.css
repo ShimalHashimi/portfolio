@@ -121,6 +121,9 @@ body{
     width: 400px;
     display: none;
 }
+.header-text h4{
+    font-weight: 200;
+}
 
 /********  About -section   *********/
 
@@ -453,6 +456,9 @@ body{
     .header-section h3{
         font-size: 1.5rem;
     }
+    .header-section h4{
+        font-size: 1.1rem;
+    }
 }
 @media screen and (max-width:1000px) {
     .header-img{
@@ -534,6 +540,9 @@ body{
     }
     .header-img{
         width: 250px;
+    }
+    .header-section h4{
+        font-size: 0.9rem;
     }
     .about-section{
         margin-top: 40px;
