@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHIMAL HASHIMI | Portfolio</title>
+    <link rel="icon" type="image/png" href="Images/user-icon.png">
 
     <!--    font-awesome    -->
 
@@ -13,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+   
     <!--     my css    -->
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
@@ -21,18 +23,20 @@
 
 </head>
 <body>
-    <!--------  navbar-section  -------->
+    <!-- <img class="bg-img" src="Images/grayscale-worldmap.jpg" alt="background_img.jpg"> -->
+
+    <!--============================    NavBar - Section     ============================-->
     <section id="navbar-section">
         <nav class="navbar">
             <div>
-                <h3><a href="#header" class="smoothscroll top-head"><span>SHIMAL HASHIMI</span></a></h3>
+                <h3><a href="#intro-section" class="smoothscroll top-head"><span>SHIMAL HASHIMI.</span></a></h3>
             </div>
             <div class="navbar-links">
-                <p class="navbar-link"><a href="#about" class="smoothscroll"><span>About</span></a></p>
-                <p class="navbar-link"><a href="#my-expertise" class="smoothscroll"><span>My Expertise</span></a></p>
-                <p class="navbar-link"><a href="#my-skills" class="smoothscroll"><span>Skills</span></a></p>
-                <p class="navbar-link"><a href="#my-works" class="smoothscroll"><span>My Works</span></a></p>
-                <p class="navbar-link"><a href="#contact" class="smoothscroll"><span>Contact</span></a></p>
+                <p class="navbar-link"><a href="#about-section" class="smoothscroll"><span>About</span></a></p>
+                <p class="navbar-link"><a href="#skill-section" class="smoothscroll"><span>Skills</span></a></p>
+                <p class="navbar-link"><a href="#project-section" class="smoothscroll"><span>Projects</span></a></p>
+                <p class="navbar-link"><a href="#experience-section" class="smoothscroll"><span>Experience</span></a></p>
+                <p class="navbar-link"><a href="#contact-section" class="smoothscroll"><span>Contact</span></a></p>
             </div>
     
             <div class="navbar-toggle" onclick="showsidenav()">
@@ -55,417 +59,380 @@
         </nav>
     </section>
 
-    
-    <!--------  Header-section  -------->
-    <section id="header">
-        <div class="header-section">
-            <div class="header-text">
-                <h3>Hello, I'm SHIMAL HASHIMI</h3>
-                <h4>Software Developer | Web & Mobile App Developer | .NET</h4>
-                <h1>Ambitious professional passionate about technology, eager to contribute and make an impact.</h1>
-                <button><a href="#contact" class="smoothscroll"><span>Contact Me</span></a></button>
+    <!--============================    Intro - Section     ============================-->
+    <section id="intro-section">
+        <div class="intro-div">
+            <div class="intro-left">
+                <ul class="intro-tag">
+                    <li>Available for work</li>
+                </ul>
+                <h1 class="intro-head">Shimal Hashimi <br><spam class="intro-head-light">Software Developer</spam></h1>
+                <p class="intro-para">
+                    I work with modern web technologies to create practical solutions, focusing on 
+                    maintainable code, continuous learning, and adapting to new tools while contributing to meaningful projects.
+                </p>
+
+                <div class="intro-button">
+                    <a href="#contact-section" class="btn btn-white smoothscroll">Get in Touch</a>
+                    <a href="#project-section" class="btn btn-outline-dark smoothscroll">View Wok</a>
+                </div>
+
+                <div class="intro-media">
+                    <a href="https://github.com/ShimalHashimi"><i class="fa-brands fa-github icon-1"></i></a>
+                    <a href="https://www.linkedin.com/in/shimal-hashimi-081630254/"><i class="fa-brands fa-linkedin-in icon-2"></i></a>
+                    <a href="mailto:shimalhashimi@gmail.com"><i class="fa-regular fa-envelope icon-3" ></i></a>
+                </div>
+
             </div>
-    
-            <div>
-                <img class="header-img" src="images/profile_img.jpg" alt="Profile_img">
+            <div class="intro-right">
+                <img src="Images/profile.jpeg" alt="profile.jpg">
             </div>
             
+            <a href="#about-section" class="smoothscroll">
+                <div class="btn-scroll">
+                    <p>Scroll</p>
+                    <i class="fa-solid fa-arrow-down icon-down"></i>
+                </div>
+            </a>
         </div>
     </section>
 
-    <!--------  About-section   ------->
-    <section id="about" style="height: 20px;"></section>
-    <section id="">
-        <div class="about-section">
-            <h1>About Me</h1><br>
-            <div class="content">
-                <img class="header-img-2" src="Images/profile_img1.jpg" alt="Profile_img">
-                <p>
-                    I am a dedicated full-stack developer with 2 years of professional experience in designing and developing 
-                    modern web applications from concept to deployment. I hold a BTEC Level 5 Higher National Diploma (HND) in Computing 
-                    with a specialization in Software Engineering, providing me with a strong foundation in development, problem-solving, 
-                    and system design. I focus on building responsive, user-friendly, and efficient web solutions that deliver real value.
+
+    <!--============================    About - Section     ============================-->
+    <section class="section" id="about-section">
+        <div class="about-div">
+            <div class="about-left">
+                <h2 class="section-title">ABOUT</h2>
+                <h1 class="section-head">Building interfaces that matter</h1>
+            </div>
+            <div class="about-right">
+                <p class="about-para">
+                    I have around 2 years of experience working with both front-end and back-end technologies, 
+                    including Angular, ASP.NET Core, HTML, CSS, JavaScript, and SQL Server. I enjoy creating applications
+                     that combine functionality with good design and performance.
                     <br><br>
-                    I am a quick learner with strong communication, adaptability, and teamwork skills. Passionate about continuous improvement, 
-                    I enjoy taking on new challenges and contributing to innovative projects. I am currently seeking opportunities where I can 
-                    grow professionally and contribute my skills to develop high-quality digital solutions.
-                </p> 
-            </div>     
-        </div>
-
-        <div class="education-section">
-            <br>
-            <h1>Educations</h1><br>
-
-            <div class="Education-list">
-                <h5>Pearson BTEC Level 5 Higher National Diploma in Computing (Software Engineering)</h5>
-                <p><i>ESOFT Metro Campus, Sept 2022 - Sept 2024</i></p>
-                <p class="edu-para">
-                    During my studies, I gained a solid understanding of software engineering, including database management, 
-                    system architecture, programming languages, and software development processes. I developed practical skills 
-                    in both front-end and back-end technologies and learned how to design intuitive user interfaces. This experience
-                     helped me grasp software architecture, best coding practices, and testing methodologies, preparing me to effectively 
-                     contribute to the development and delivery of technology solutions.
-                </p>
-            </div>
-            <div class="Education-list">
-                <h5>Diploma in IT and Diploma in English</h5>
-                <p><i>Royal International College, Nov 2020 - May 2021</i></p>
-                <p class="edu-para">
-                    This program provided me with a strong foundation in IT, alongside enhanced communication skills in both technical 
-                    and non-technical contexts, equipping me to interact effectively in diverse professional environments.
-                </p>
-            </div>
-            <div class="Education-list">
-                <h5>GCE A/L in Physical Science</h5>
-                <p><i>T/R.K.M. Sri Koneswara Hindu College, 2020</i></p>
-                <p class="edu-para">
-                    Focused on physical sciences, my secondary education provided a strong foundation for my further studies in 
-                    technology and engineering.
-                </p>
-            </div>
-        </div>
-
-        <div class="education-section">
-            <br>
-            <h1>Experience</h1><br>
-            <div class="Education-list">
-                <h5>Document Controller  </h5>
-                <p><i>Advance Internation Trading Co.  2025 May – Present</i></p>
-                <p class="edu-para">
-                    Managed technical and administrative documents with accurate logging, tracking, and version control to 
-                    ensure compliance with project standards. <br>
-                    Coordinated document submissions and maintained timely document flow between subcontractors and 
-                    the main contractor using MS Word, Excel, and document management systems. 
-                </p>
-            </div>
-            <div class="Education-list">
-                <h5>Full Stuck Developer </h5>
-                <p><i>Zolatik.  2025 April – 2025 Sept (Remote)</i></p>
-                <p class="edu-para">
-                    Developed full-stack applications using Angular (TypeScript) for the frontend and ASP.NET Core Web API 
-                    for the backend, implementing RESTful APIs and full CRUD operations with SQL Server.  <br>
-                    Collaborated with team members using GitHub while following SDLC and Agile practices to deliver reliable 
-                    and scalable software solutions.
-                </p>
-            </div>
-            <div class="Education-list">
-                <h5>Junior Software Developer</h5>
-                <p><i>Global Strategic Solution Pvt Ltd.  2023 Sept - 2024 Dec</i></p>
-                <p class="edu-para">
-                    Developed desktop POS systems using C# .NET and SQL Server, supporting inventory, sales, pricing, and 
-                    reporting functions. <br>
-                    Built responsive websites using HTML, CSS, JavaScript, and Bootstrap, and assisted in application 
-                    development following SDLC best practices.
+                    I work with modern web technologies to develop practical solutions that turn ideas into real applications.
+                     I focus on writing clean, maintainable code and building systems that are structured and efficient.
+                    <br><br>
+                    I am always looking to improve my skills, learn new technologies, and take on challenges that help me 
+                    grow as a developer while contributing to meaningful projects.
                 </p>
             </div>
         </div>
 
     </section>
 
+    <!--============================    Skill - Section     ============================-->
+    <section class="section" id="skill-section">
+        <div class="skill-div">
+            <h2 class="section-title">Skills</h2>
+            <h1 class="section-head">Technologies I work with</h1>
 
-    <!--------  My Expertise-section   ------->
-    <section id="my-expertise">
+            <div class="skill-cat">
+                <div class="">
+                    <h2>Front-End</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Angular (TypeScript)</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
 
-    </section>
-    <section id="expertise">
-        <div class="choose-section">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <div class="">
+                    <h2>Back-End</h2>
+                    <ul>
+                        <li>C#</li>
+                        <li>ASP.NET</li>
+                        <li>.NET Web API</li>
+                        <li>SQL Server</li>
+                    </ul>
                 </div>
-                <div class="carousel-inner">
-                    
-                <div class="carousel-item-1">
-                    <h1>MY <br> EXPERTISES</h1>
-                </div>
-                  <div class="carousel-item active">
-                    <div class="carousel-item-2">
-                        <i class="fa-regular fa-window-restore"></i>
-                        <h2>Windows Application</h2>
-                        <p>I create Windows applications that successfully combine utility and aesthetics, guaranteeing user-friendly 
-                            experiences, by utilizing Visual Studio and C#. I use Firebase and internal databases to build reliable 
-                            applications with an attention to detail. Together, let's create reliable and efficient Windows apps that 
-                            propel your company's development and realize your ultimate goal.
-                        </p>
-                    </div>
-                  </div>
-                  
-                  <div class="carousel-item">
-                    <div class="carousel-item-2">
-                        <i class="fa-solid fa-crop"></i>
-                        <h2>Web Development</h2>
-                        <p>With a solid foundation in HTML and CSS, I've participated on group projects as a front-end developer and have
-                            successfully made landing sites and to-do lists. I create interactive, responsive web interfaces with HTML, CSS,
-                            and JavaScript. Together, let's develop creative and approachable web solutions to maximize your online presence
-                            and realize your ideas.
-                        </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-item-2">
-                        <i class="fa-solid fa-globe"></i>
-                        <h2>Web Application</h2>
-                        <p>With a solid foundation in C# for back-end development and HTML, CSS for front-end design, I've built web applications 
-                            that ensure seamless functionality and user experience. I have experience in creating interactive interfaces, managing
-                             databases, and implementing efficient back-end logic. Let's develop dynamic and responsive web solutions to enhance 
-                             your digital presence and optimize business operations.
-                        </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-item-2">
-                        <i class="fa-brands fa-figma"></i>
-                        <h2>UI Design</h2>
-                        <p>I have successfully handled UI design and prototyping tasks by utilizing my proficiency with Figma. 
-                            My designs guarantee intuitive user interactions by skillfully fusing beauty and usefulness. I produce
-                            wireframes and prototypes that are incredibly detailed and help your projects come to life. Together, 
-                            let's create compelling UI/UX solutions that propel your company forward.
-                        </p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </div>
-    
-        <div class="choose-section-2">
-            <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                <div class="">
+                    <h2>Tools & Platforms</h2>
+                    <ul>
+                        <li>Visual Studio</li>
+                        <li>VS Code</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Figma</li>
+                        <li>MS Office</li>
+                    </ul>
                 </div>
                 
-                <h1>My Expertise</h1>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="carousel-item-3">
-                        <div class="key-reason">
-                            <div class="key-reason-head">
-                                <i class="fa-regular fa-window-restore"></i>
-                                <h2>Windows Application</h2>
-                            </div>
-                            <p>I create Windows applications that successfully combine utility and aesthetics, guaranteeing user-friendly 
-                                experiences, by utilizing Visual Studio and C#. I use Firebase and internal databases to build reliable 
-                                applications with an attention to detail. Together, let's create reliable and efficient Windows apps that 
-                                propel your company's development and realize your ultimate goal.
-                            </p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-item-3">
-                        <div class="key-reason">
-                            <div class="key-reason-head">
-                                <i class="fa-solid fa-crop"></i>
-                                <h2>Web Development</h2>
-                            </div>
-                            <p>With a solid foundation in HTML and CSS, I've participated on group projects as a front-end developer and have
-                                successfully made landing sites and to-do lists. I create interactive, responsive web interfaces with HTML, CSS,
-                                and JavaScript. Together, let's develop creative and approachable web solutions to maximize your online presence
-                                and realize your ideas.
-                            </p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-item-3">
-                        <div class="key-reason">
-                            <div class="key-reason-head">
-                                <i class="fa-solid fa-globe"></i>
-                                <h2>Web Application</h2>
-                            </div>
-                            <p>With a solid foundation in C# for back-end development and HTML, CSS for front-end design, I've built web applications 
-                                that ensure seamless functionality and user experience. I have experience in creating interactive interfaces, managing
-                                 databases, and implementing efficient back-end logic. Let's develop dynamic and responsive web solutions to enhance 
-                                 your digital presence and optimize business operations.
-                            </p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="carousel-item-3">
-                        <div class="key-reason">
-                            <div class="key-reason-head">
-                                <i class="fa-brands fa-figma"></i>
-                                <h2>UI Design</h2>
-                            </div>
-                            <p>I have successfully handled UI design and prototyping tasks by utilizing my proficiency with Figma. 
-                                My designs guarantee intuitive user interactions by skillfully fusing beauty and usefulness. I produce
-                                wireframes and prototypes that are incredibly detailed and help your projects come to life. Together, 
-                                let's create compelling UI/UX solutions that propel your company forward.
-                            </p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </div>
-    </section>
-
-
-    <!--------  My Skill-section   ------->
-    <section id="my-skills"></section>
-    <div class="skill-section">
-        <div class="skills">
-            <h1>My Skills</h1>
-            <br>
-            <div class="row skill-div">
-                <div class="tech-skill col-md-7">
-                    <h3>Technical Skills</h3>
+                <div class="">
+                    <h2>Core Concepts</h2>
                     <ul>
-                        <li><b>Front-End Technologies:</b><br><span> HTML, CSS, JavaScript, Bootstrap, React </span></li>
-                        <li><b> Back-End Technologies: </b><br><span>C#, .NET </span></li>
-                        <li><b>Databases:</b><br> <span>SQL Server, Firebase </span></li>
-                        <li><b>Tools:</b><br> <span> Visual Studio, Visual Studio Code  </span></li>
-                        <li><b>UI Designing:</b><br><span>Figma </span></li>
-                        <li><b>MS Office:</b><br> <span> Word, Excel, PowerPoint </span></li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>SDLC (Software Development Life Cycle)</li>
+                        <li>CRUD Operations</li>
+                        <li>Responsive Design</li>
+                        <li>Testing</li>
                     </ul>
-                    
-                </div>
-                <div class="soft-skill col-md-5">
-                    <h3>PERSONAL SKILLS</h3>
-                    <li><b>Collaborate with Team </b></li>
-                    <li><b>Adaptable to Environments</b></li>
-                    <li><b>Time Management</b></li>
-                    <li><b>Stress Management </b></li>
-                    <li><b>Problem-Solving </b></li>
-                    <li><b>Reliability</b></li>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!--------  My Works-section   ------->
-    <section id="my-works" style="height: 10px;">
-
-    </section>
-    <section id="work-section">
-        <div class="work-section">
-            <h1>My Works</h1>
-            <div class="work-container">
-                <div class="work-box">
-                    <img src="Images/work-4.png" alt="">
-                    <div class="layer">
-                        <h3>Static Website</h3>
-                        <p>Currently working on a static website using HTML, CSS, and JavaScript for a client project.</p>
-                        <a href="https://shimalhashimi.github.io/gss-sample/">View in Github page</a>
-                    </div>
-                </div>
-                <div class="work-box">
-                    <img src="Images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>e-commerce website</h3>
-                        <p>Developed a static e-commerce website with product listings, search, and contact page using HTML, CSS, JavaScript.</p>
-                        <a href="https://shimalhashimi.github.io/E-commerce-website/">View in Github page</a>
-                    </div>
-                </div>
-                <div class="work-box">
-                    <img src="Images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>Real time POS system</h3>
-                        <p>Developed a POS system using C# and SQL Server database for efficient sales management.</p>
-                        <a href="https://github.com/ShimalHashimi/POS-System">View in Github.</a>
-                    </div>
-                </div>
-                <div class="work-box">
-                    <img src="Images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>UI design for website</h3>
-                        <p>Created UI design for an organization's website using Figma for a user-friendly experience.</p>
-                        <a href="https://www.figma.com/proto/aBamniiwLA5kb7YaiJR5AE/Untitled?node-id=10-85&node-type=canvas&t=3W8BNbbWD7rJp45w-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A60&show-proto-sidebar=1">View in Figma </a>
-                    </div>
-                </div>
-                <div class="work-box">
-                    <img src="Images/work-5.png" alt="">
-                    <div class="layer">
-                        <h3>Shipping Website</h3>
-                        <p>Developed a website using HTML, CSS and JavaScript for practice</p>
-                        <a href="https://www.figma.com/proto/NxY98rQjIFO2F4eJfIJOKF/Xibet-Practical-UI%2FUX?node-id=146-21&p=f&t=vhDzinVkvejgW6mO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">View in Figma </a>
-                    </div>
-                </div>
-                <div class="work-box">
-                    <img src="Images/work-6.png" alt="">
-                    <div class="layer">
-                        <h3>Photography Website</h3>
-                        <p>Developed a website using HTML, CSS and JavaScript for practice</p>
-                        <a href="https://www.figma.com/proto/xVLuzv190QedL7sKtACndc/Untitled?node-id=11-31&starting-point-node-id=11%3A31&scaling=min-zoom&content-scaling=fixed&t=i0s8TmTjWETmpBRi-1">View in Figma </a>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-    <!--------  contact-section   ------->
-    <section id="contact"></section>
-    <section id="contact-section">
-        <div id="contact">
-          <!--<div class="container">-->
-            <div class="row">
-              <div class="contact-left">
-                <h1 class="sub-title contact-head">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i><a href="mailto:shimalhashimi@gmail.com">shimalhashimi@gmail.com</a></p>
-                <p><i class="fa-solid fa-phone"></i><a href="tel:+966593863435">(+966) 59 386 3435</a></p>
-                <p><i class="fa-brands fa-whatsapp"></i><a href="tel:+94775212143">(+94) 775212143</a></p>
-                <div class="social-icons">
-                  <a href="https://www.facebook.com/profile.php?id=100080120275314" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        
-                  <a href="https://www.instagram.com/shimalhsm/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        
-                  <a href="https://www.linkedin.com/in/shimal-hsm-081630254/" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
-        
-                  <a href="https://github.com/ShimalHashimi" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <button class="btn btn-primary"><a class="resume-link" href="ShimalResume.pdf" download>Download CV</a></button>
-
-
-              </div>
-        
-              <div class="contact-right">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                  <input type="hidden" name="access_key" value="a2b7b102-6730-4436-94a0-2054c5404c00">
-                  <input type="text" name="Name" placeholder="Your Good Name" required>
-                  <input type="email" name="Email" placeholder="Your Email" required>
-                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                  <button type="submit" class="btn btn-primary">submit</button>
-                </form>
-              </div>
-        
-        
-            </div>
-          <!--</div>-->
-        </div>
-    </section>
-
-
     
-    <!--    script - files  -->
-    <script src="main.js"></script>
-    <script src="https://kit.fontawesome.com/bc0de78847.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!--============================    Project - Section     ============================-->
+    <section class="section" id="project-section">
+        <div class="project-div">
+            <div class="about-left">
+                <h2 class="section-title">PROJECTS</h2>
+                <h1 class="section-head">Selected work</h1>
+            </div>
+            <div class="project-list">
+                <div class="project-container">
+                    <div class="project-box">
+                        <img src="Images/work-4.png" alt="">
+                        <div class="layer">
+                            <h3>Static Website</h3>
+                            <p>Currently working on a static website using HTML, CSS, and JavaScript for a client project.</p>
+                            <a href="https://shimalhashimi.github.io/gss-sample/">View in Github page</a>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="Images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>e-commerce website</h3>
+                            <p>Developed a static e-commerce website with product listings, search, and contact page using HTML, CSS, JavaScript.</p>
+                            <a href="https://shimalhashimi.github.io/E-commerce-website/">View in Github page</a>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="Images/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>Real time POS system</h3>
+                            <p>Developed a POS system using C# and SQL Server database for efficient sales management.</p>
+                            <a href="https://github.com/ShimalHashimi/POS-System">View in Github.</a>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="Images/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>UI design for website</h3>
+                            <p>Created UI design for an organization's website using Figma for a user-friendly experience.</p>
+                            <a href="https://www.figma.com/proto/aBamniiwLA5kb7YaiJR5AE/Untitled?node-id=10-85&node-type=canvas&t=3W8BNbbWD7rJp45w-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A60&show-proto-sidebar=1">View in Figma </a>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="Images/work-5.png" alt="">
+                        <div class="layer">
+                            <h3>Shipping Website</h3>
+                            <p>Developed a website using HTML, CSS and JavaScript for practice</p>
+                            <a href="https://www.figma.com/proto/NxY98rQjIFO2F4eJfIJOKF/Xibet-Practical-UI%2FUX?node-id=146-21&p=f&t=vhDzinVkvejgW6mO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">View in Figma </a>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <img src="Images/work-6.png" alt="">
+                        <div class="layer">
+                            <h3>Photography Website</h3>
+                            <p>Developed a website using HTML, CSS and JavaScript for practice</p>
+                            <a href="https://www.figma.com/proto/xVLuzv190QedL7sKtACndc/Untitled?node-id=11-31&starting-point-node-id=11%3A31&scaling=min-zoom&content-scaling=fixed&t=i0s8TmTjWETmpBRi-1">View in Figma </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--============================    Experience - Section     ============================-->
+    <section class="section" id="experience-section">
+        <h2 class="section-title">EXPERIENCE</h2>
+        <h1 class="section-head">Where I've worked</h1>
+
+        <div class="work-list">
+            <div class="work-box">
+                <div class="work-box-left">
+                    <h3 class="work-period">2025 May - Present</h3>
+                </div>
+                <div class="work-box-right">
+                    <h2 class="work-title">Assistant Document Controller </h2>
+                    <h2 class="work-company">AITCO</h2>
+                    <p class="work-para">
+                        Managed document communication with contractors via email, maintained logs and version control, 
+                        organized project documents using Word and Excel, updated cloud storage, and coordinated attendance
+                         and timesheets using ZKTeco software.
+                    </p>
+                    <spam class="work-skill">Document Management</spam>
+                    <spam class="work-skill">Microsoft Office</spam>
+                    <spam class="work-skill">Attendance Tracking</spam>
+                </div>
+            </div>
+            <div class="work-box">
+                <div class="work-box-left">
+                    <h3 class="work-period"> 2025 April - 2025 Sept</h3>
+                </div>
+                <div class="work-box-right">
+                    <h2 class="work-title">Full Stuck Software Developer </h2>
+                    <h2 class="work-company">Zolatik(Pvt) Ltd.</h2>
+                    <p class="work-para">
+                        Worked on front-end interfaces using Angular, TypeScript, HTML, CSS, and Bootstrap, and 
+                        integrated ASP.NET Web API with SQL Server. Handled API testing, authentication, and ensured smooth 
+                        communication between frontend and backend systems.
+                    </p>
+                    <spam class="work-skill">Angular</spam>
+                    <spam class="work-skill">TypeScript</spam>
+                    <spam class="work-skill">Bootstrap</spam>
+                    <spam class="work-skill">ASP.NET Web API</spam>
+                    <spam class="work-skill">SQL Server</spam>
+                    <spam class="work-skill">Testing</spam>
+                </div>
+            </div>
+            <div class="work-box">
+                <div class="work-box-left">
+                    <h3 class="work-period">2023 Sept - 2024 Dec</h3>
+                </div>
+                <div class="work-box-right">
+                    <h2 class="work-title">Junior Software Developer </h2>
+                    <h2 class="work-company">Global Strategic Solution (Pvt) Ltd.</h2>
+                    <p class="work-para">
+                        Developed Windows-based applications using C# and Visual Studio, contributing to UI design 
+                        with Figma, HTML, CSS, and responsive principles. Performed testing and debugging, collaborated 
+                        in an Agile team through discussions and code reviews, and supported technical documentation.
+                    </p>
+                    <spam class="work-skill">C#</spam>
+                    <spam class="work-skill">Visual Studio</spam>
+                    <spam class="work-skill">HTML</spam>
+                    <spam class="work-skill">CSS</spam>
+                    <spam class="work-skill">JavaScript</spam>
+                </div>
+            </div>
+
+        </div>
+        <div class="view-resume">
+            <a href="resume.pdf" target="_blank">View Full Resume <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+
+      <!--============================    Contact - Section     ============================-->
+    <section class="section" id="contact-section">
+        <div class="contact-div">
+            <div class="contact-left">
+                <h2 class="section-title">CONTACT</h2>
+                <h1 class="section-head">Let's work together</h1>
+                <p>
+                    I’m open to new opportunities and collaborations—feel free to get in touch if you’d like to discuss projects or future possibilities.
+                </p>
+
+                <div class="contact-link">
+                    <div class="contact-link-item">
+                        <i class="fa-regular fa-envelope" ></i>
+                        <div class="contact-link-text">
+                            <p>
+                                Email <br>
+                                <a href="mailto:shimalhashimi@gmail.com" class="contact-email">
+                                    shimalhashimi@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-link-item">                        
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="contact-link-text">
+                            <p>
+                                Phone <br>
+                                <a class="contact-email">
+                                    +966 59 386 3435
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-link-item">                        
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="contact-link-text">
+                            <p>
+                                Location <br>
+                                <a class="contact-email">
+                                    Jeddah, Saudi Arabia
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="contact-media">
+                    <a href="https://github.com/ShimalHashimi">GitHub <i class="fa-solid fa-arrow-down"></i></a>
+                    <a href="https://www.linkedin.com/in/shimal-hashimi-081630254/">LinkedIn <i class="fa-solid fa-arrow-down"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                     <input type="hidden" name="access_key" value="a2b7b102-6730-4436-94a0-2054c5404c00">
+
+                    <label>Name</label>
+                    <input type="text" name="Name" placeholder="Your Good Name" required>
+
+                    <label>Email</label>
+                    <input type="email" name="Email" placeholder="Your@email.com" required>
+
+                    <label>Message</label>
+                    <textarea name="Message" rows="6" placeholder="Tell me about your project..."></textarea>
+                    <button type="submit" class="btn">Sent Message <i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--============================    Footer - Section     ============================-->
+    <section class="section" id="footer-section">
+        <div class="footer-div">
+            <div class="footer-left">
+                <p>© 2026 ShimalHashimi. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--============================    JS - Section     ============================-->
+
+
+
+    <script>
+        //***************       Navbar scroll script
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+
+
+        //***************       Section script
+        const sections = document.querySelectorAll(".section");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: 0.3 
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        //***************       ul animation script
+        const items = document.querySelectorAll(".skill-cat li");
+        const observer1 = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    items.forEach(item => item.classList.add("show"));
+                }
+            });
+        }, { threshold: 0.3 });
+
+        observer1.observe(document.querySelector(".skill-cat"));
+</script>
 </body>
 </html>
