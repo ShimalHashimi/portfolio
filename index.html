@@ -39,22 +39,20 @@
                 <p class="navbar-link"><a href="#contact-section" class="smoothscroll"><span>Contact</span></a></p>
             </div>
     
-            <div class="navbar-toggle" onclick="showsidenav()">
-                <i class="fa-solid fa-bars"></i> 
+            <div class="navbar-toggle">
+                <i  onclick="showsidenav()" class="fa-solid fa-bars nav-menu"></i> 
+                <i  onclick="hidesidenav()" class="fa-solid fa-xmark nav-close"></i>
             </div>
             
         </nav>
     
         <nav class="side-navbar">
-            <p style="text-align: left;"  onclick="hidesidenav()">
-                <i class="fa-solid fa-xmark"></i>
-            </p>
-            <div class="side-navbar-links">
-                <p class="side-navbar-link"><a href="#about" class="smoothscroll"><span>About</span></a></p>
-                <p class="side-navbar-link"><a href="#my-expertise" class="smoothscroll"><span>My Expertise</span></a></p>
-                <p class="side-navbar-link"><a href="#my-skills" class="smoothscroll"><span>Skills</span></a></p>
-                <p class="side-navbar-link"><a href="#my-works" class="smoothscroll"><span>My Works</span></a></p>
-                <p class="side-navbar-link"><a href="#contact" class="smoothscroll"><span>Contact</span></a></p>
+            <div class="side-navbar-links ">
+                <p class="side-navbar-link"><a href="#about-section" class="smoothscroll"><span>About</span></a></p>
+                <p class="side-navbar-link"><a href="#skill-section" class="smoothscroll"><span>Skills</span></a></p>
+                <p class="side-navbar-link"><a href="#project-section" class="smoothscroll"><span>Projects</span></a></p>
+                <p class="side-navbar-link"><a href="#experience-section" class="smoothscroll"><span>Experience</span></a></p>
+                <p class="side-navbar-link"><a href="#contact-section" class="smoothscroll"><span>Contact</span></a></p>
             </div>
         </nav>
     </section>
@@ -63,10 +61,18 @@
     <section id="intro-section">
         <div class="intro-div">
             <div class="intro-left">
-                <ul class="intro-tag">
-                    <li>Available for work</li>
-                </ul>
-                <h1 class="intro-head">Shimal Hashimi <br><spam class="intro-head-light">Software Developer</spam></h1>
+                <div class="intro-top-res">
+                    <div>
+                        <ul class="intro-tag">
+                            <li>Available for work</li>
+                        </ul>
+                        <h1 class="intro-head">Shimal Hashimi <br><spam class="intro-head-light">Software Developer</spam></h1>
+                    </div>
+                    <div class="intro-img-res">
+                        <img src="Images/profile.jpeg" alt="profile.jpg">
+                    </div>
+                </div>
+
                 <p class="intro-para">
                     I work with modern web technologies to create practical solutions, focusing on 
                     maintainable code, continuous learning, and adapting to new tools while contributing to meaningful projects.
@@ -96,7 +102,6 @@
             </a>
         </div>
     </section>
-
 
     <!--============================    About - Section     ============================-->
     <section class="section" id="about-section">
@@ -129,7 +134,7 @@
             <h1 class="section-head">Technologies I work with</h1>
 
             <div class="skill-cat">
-                <div class="">
+                <div class="skill-type">
                     <h2>Front-End</h2>
                     <ul>
                         <li>HTML</li>
@@ -140,7 +145,7 @@
                     </ul>
                 </div>
 
-                <div class="">
+                <div class="skill-type">
                     <h2>Back-End</h2>
                     <ul>
                         <li>C#</li>
@@ -150,7 +155,7 @@
                     </ul>
                 </div>
 
-                <div class="">
+                <div class="skill-type">
                     <h2>Tools & Platforms</h2>
                     <ul>
                         <li>Visual Studio</li>
@@ -162,7 +167,7 @@
                     </ul>
                 </div>
                 
-                <div class="">
+                <div class="skill-type">
                     <h2>Core Concepts</h2>
                     <ul>
                         <li>Object-Oriented Programming (OOP)</li>
@@ -390,8 +395,8 @@
         </div>
     </section>
 
-    <!--============================    JS - Section     ============================-->
 
+    <!--============================    JS - Section     ============================-->
 
 
     <script>
@@ -434,6 +439,19 @@
         }, { threshold: 0.3 });
 
         observer1.observe(document.querySelector(".skill-cat"));
+
+        //***************       side navbar  script
+        function showsidenav() {
+            document.querySelector(".nav-close").classList.add("show");
+            document.querySelector(".nav-menu").classList.add("hide");
+            document.querySelector(".side-navbar").style.top = "70px";
+        }
+
+        function hidesidenav() {
+            document.querySelector(".nav-close").classList.remove("show");
+            document.querySelector(".nav-menu").classList.remove("hide");
+            document.querySelector(".side-navbar").style.top = "-300px";
+        }
 </script>
 </body>
 </html>
