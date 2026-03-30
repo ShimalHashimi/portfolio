@@ -121,10 +121,11 @@ body {
 
     width: 45%;
     height: 330px;
-    top: -400px;
+    top: -250px;
     left: 48%;
     transition: 0.5s;
     z-index: 1;
+    opacity: 0;
 }
 
 .side-navbar a{

@@ -445,12 +445,16 @@
             document.querySelector(".nav-close").classList.add("show");
             document.querySelector(".nav-menu").classList.add("hide");
             document.querySelector(".side-navbar").style.top = "70px";
+            document.querySelector(".side-navbar").style.opacity = "1";
+
         }
 
         function hidesidenav() {
             document.querySelector(".nav-close").classList.remove("show");
             document.querySelector(".nav-menu").classList.remove("hide");
-            document.querySelector(".side-navbar").style.top = "-400px";
+            document.querySelector(".side-navbar").style.top = "-250px";
+            document.querySelector(".side-navbar").style.opacity = "0";
+
         }
 </script>
 </body>
